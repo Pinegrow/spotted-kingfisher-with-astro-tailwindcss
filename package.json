@@ -2,7 +2,7 @@
   "name": "spotted-kingfisher-with-astro-tailwindcss",
   "type": "module",
   "version": "0.0.1",
-  "homepage": "https://spotted-kingfisher-with-astro-tailwindcss.netlify.app",
+  "homepage": "https://spotted-kingfisher-astro-tailwindcss.netlify.app",
   "repository": {
     "type": "git",
     "url": "https://github.com/techakayy/spotted-kingfisher-with-astro-tailwindcss.git"

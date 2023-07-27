@@ -4,7 +4,7 @@ Spotted Kingfisher is a charity organization that helps endangered species by ed
 
 This is a sample project created using the [Vue Designer Astro Tailwind CSS - Quick start template](https://github.com/pinegrow/pg-astro-tailwindcss).
 
-Demo - https://spotted-kingfisher-with-astro-tailwindcss.netlify.app/
+Demo - https://spotted-kingfisher-astro-tailwindcss.netlify.app/
 
 ## Vue Designer
 
