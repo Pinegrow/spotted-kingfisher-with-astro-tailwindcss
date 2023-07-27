@@ -12,14 +12,18 @@ import Unocss from 'unocss/astro'
 import presetIcons from '@unocss/preset-icons'
 // import VueDevTools from 'vite-plugin-vue-devtools'
 
+import mdx from '@astrojs/mdx'
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [
     vue(),
     pinegrow({
       liveDesigner: {
-        iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
-        devtoolsKey: 'devtools', // see app.ts
+        iconPreferredCase: 'unocss',
+        // default value (can be removed), unocss by default uses the unocss format for icon names
+        devtoolsKey: 'devtools',
+        // see app.ts
         tailwindcss: {
           configPath: 'tailwind.config.ts',
           cssPath: '@/assets/css/tailwind.css',
@@ -50,6 +54,7 @@ export default defineConfig({
         }),
       ],
     }),
+    mdx(),
   ],
   vite: {
     plugins: [
