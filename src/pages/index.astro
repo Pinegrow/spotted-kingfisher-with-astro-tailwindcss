@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro'
+import HeroSection from '../components/HeroSection.vue'
+import TheVolunteering from '../components/TheVolunteering.svelte'
+import GetInvolved from '../components/GetInvolved.jsx'
+import DiscoverProjects from '../components/DiscoverProjects'
+const name = "I'm a hero!"
+---
+<Layout title="Welcome to Astro.">
+    <HeroSection client:load/>
+    <TheVolunteering client:idle/>
+    <DiscoverProjects client:visible/>
+    <GetInvolved client:media="screen and (min-width: 600px)"/>
+</Layout>
+<style></style>
