@@ -3,6 +3,7 @@
 
 
     /* Pinegrow generated Design Panel Init End */
+    
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -52,7 +53,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .poster:before {
-    background-image: url(https://images.unsplash.com/photo-1444464666168-49d633b86797?crop=entropy&cs=srgb&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDIzfHxzcG90dGVkJTIwa2luZ2Zpc2hlcnxlbnwwfHx8fDE2ODkxNjM0NjB8MA&ixlib=rb-4.0.3&q=85)!important;
+    background-image: url(https://images.unsplash.com/photo-1444464666168-49d633b86797?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80)!important;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -63,6 +64,7 @@ h1,h2,h3,h4,h5,h6 {
     height:100%;
     z-index:-1;
     position: absolute;
+    filter: blur(0px);
 }
 
 body.poster:before {
@@ -70,7 +72,7 @@ position: fixed;
 }                        
 @media (min-width: 1440px), (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 992px) and (min-resolution: 192dpi) {
     .poster:before {                        
-        background-image: url(https://images.unsplash.com/photo-1444464666168-49d633b86797?crop=entropy&cs=srgb&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDIzfHxzcG90dGVkJTIwa2luZ2Zpc2hlcnxlbnwwfHx8fDE2ODkxNjM0NjB8MA&ixlib=rb-4.0.3&q=85)!important;         
+        background-image: url(https://images.unsplash.com/photo-1444464666168-49d633b86797?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80)!important;         
     }                           
 }
 body, html {

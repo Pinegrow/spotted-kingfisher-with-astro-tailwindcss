@@ -4,7 +4,8 @@
     "jsx": "react-jsx",
     "paths": {
       "@/*": ["src/*"],
-      "~/*": ["src/*"]
+      "~/*": ["src/*"],
+      "~~/*": ["*"]      
     },
     "jsxImportSource": "preact",
     "strict": false,

@@ -1,8 +1,8 @@
-const DiscoverProjects = ({
+const DiscoverProjects = (/*{
   name = 'DiscoverProjects.tsx',
 }: {
   name?: string
-}) => (
+}*/) => (
   <section class="bg-primary-100 dark:bg-primary-700 text-primary-900 dark:text-primary-100">
     <svg
       xmlns="http://www.w3.org/2000/svg"

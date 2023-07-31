@@ -1,4 +1,4 @@
-const GetInvolved = ({ name = 'GetInvolved.jsx' }) => (
+const GetInvolved = (/*{ name = 'GetInvolved.jsx' }*/) => (
   <section class="py-24">
     <div class="container mx-auto px-4 relative">
       <div class="mb-8 text-center">

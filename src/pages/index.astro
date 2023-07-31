@@ -6,10 +6,11 @@ import GetInvolved from '../components/GetInvolved.jsx'
 import DiscoverProjects from '../components/DiscoverProjects'
 const name = "I'm a hero!"
 ---
+
 <Layout title="Welcome to Astro.">
-    <HeroSection client:load/>
-    <TheVolunteering client:idle/>
-    <DiscoverProjects client:visible/>
-    <GetInvolved client:media="screen and (min-width: 600px)"/>
+  <HeroSection client:load />
+  <GetInvolved client:media="screen and (min-width: 600px)" />
+  <DiscoverProjects client:visible />
+  <TheVolunteering client:idle />
 </Layout>
 <style></style>
