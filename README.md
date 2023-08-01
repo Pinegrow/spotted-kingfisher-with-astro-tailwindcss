@@ -1,6 +1,6 @@
-# Spotted Kingfisher with Astro (MPA SSG) and Tailwind CSS!
+# Spotted Kingfisher with Astro and Tailwind CSS!
 
-Spotted Kingfisher is a charity organization that helps endangered species by educating the community, and running various volunteering programs.
+Jamstack (MPA-SSG) app for an wildlife welfare/charity organization that helps endangered species by educating the community, and running various volunteering programs. While layouts and pages follow the .astro component format, components are predominantly Vue SFCs and also includes svelte and jsx/tsx components. Note: Astro supports component formats of multiple frameworks.
 
 This is a sample project created using the [Vue Designer Astro Tailwind CSS - Quick start template](https://github.com/pinegrow/pg-astro-tailwindcss).
 
