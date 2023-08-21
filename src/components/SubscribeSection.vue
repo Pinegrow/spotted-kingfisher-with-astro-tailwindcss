@@ -8,8 +8,7 @@
 </script>
 <template>
   <div
-    class="pt-36 pb-12 text-center bg-primary-100 dark:bg-primary-700 text-primary-900 dark:text-primary-100"
-  >
+    class="text-center bg-primary-100 dark:bg-primary-700 text-primary-900 dark:text-primary-100">
     <div class="container mx-auto px-4">
       <div class="-mx-4 flex flex-wrap">
         <div class="mx-auto px-4 rounded-2xl w-full lg:w-8/12">
@@ -27,8 +26,7 @@
               method="post"
               target="_blank"
               rel="noopener"
-              data-drip-embedded-form="243852739"
-            >
+              data-drip-embedded-form="243852739">
               <div class="flex items-center overflow-hidden p-2 rounded-3xl">
                 <label for="emailfield" class="sr-only">Email address:</label>
                 <input
@@ -37,8 +35,7 @@
                   placeholder="email@example.com"
                   type="email"
                   required
-                  name="fields[email]"
-                />
+                  name="fields[email]" />
                 <BaseButton type="submit" class="ml-2" variant="soft" size="md">
                   Sign Up
                 </BaseButton>
