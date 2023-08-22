@@ -42,7 +42,7 @@
                 >
               </a>
             </div>
-            <NavBarDesktopTabs
+            <NavBarDesktopMenu
               :navlinks="desktopNavTabs"
               class="hidden sm:flex sm:ml-6" />
           </div>

@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config'
+import {defineConfig} from 'astro/config'
 import vue from '@astrojs/vue'
 import tailwind from '@astrojs/tailwind'
 import react from '@astrojs/react'
@@ -7,7 +7,7 @@ import svelte from '@astrojs/svelte'
 import mdx from '@astrojs/mdx'
 
 import Pinegrow from '@pinegrow/astro-module'
-import { fileURLToPath, URL } from 'node:url'
+import {fileURLToPath, URL} from 'node:url'
 import AutoImportComponents from 'unplugin-vue-components/vite'
 import AutoImportAPIs from 'unplugin-auto-import/astro'
 import Unocss from 'unocss/astro'
@@ -70,7 +70,7 @@ export default defineConfig({
         // 'vue/macros',
         // '@vueuse/head',
         // '@vueuse/core',
-        // 'pinia',
+        'pinia',
       ],
       dirs: [
         // 'src/composables',
