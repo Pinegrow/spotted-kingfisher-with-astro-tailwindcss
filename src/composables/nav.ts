@@ -1,6 +1,6 @@
-import {computed} from 'vue'
+import { computed } from 'vue'
 import site from '../site'
-import {isClient, useBrowserLocation} from '@vueuse/core'
+import { isClient, useBrowserLocation } from '@vueuse/core'
 
 export const useNav = () => {
   const navlinksFromConfig = site.nav

@@ -1,9 +1,9 @@
 // Safelisting of color classes for dynamic usage is inpsired by https://ui.nuxt.com/getting-started/theming#colors. The safelisting can be further optimized and automated to extract based on usage at a component level. For details, refer to Smart Safelisting introduced in https://github.com/nuxt/ui/pull/268 & https://github.com/nuxt/ui/blob/dev/src/colors.ts
 
 import colors from 'tailwindcss/colors'
-import {pg_colors} from '../../themes/pg-tailwindcss/tokens.mjs'
+import { pg_colors } from '../../themes/pg-tailwindcss/tokens.mjs'
 
-import {omit, kebabCase} from './index'
+import { omit, kebabCase } from './index'
 
 // @ts-ignore
 delete colors.lightBlue
@@ -32,7 +32,7 @@ export const colorsToExclude = [
 
 export const excludeColors = (colors: object) =>
   Object.keys(omit(colors, colorsToExclude)).map((color) =>
-    kebabCase(color)
+    kebabCase(color),
   ) as string[]
 
 export const colorsAsRegex = (colors: string[]): string => colors.join('|')
@@ -48,7 +48,7 @@ export const hexToRgb = (hex) => {
   return result
     ? `${parseInt(result[1], 16)} ${parseInt(result[2], 16)} ${parseInt(
         result[3],
-        16
+        16,
       )}`
     : null
 }
@@ -116,4 +116,4 @@ const safelist = [
   },
 ]
 
-export {safelist, variantColors as colors}
+export { safelist, variantColors as colors }

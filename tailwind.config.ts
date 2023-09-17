@@ -4,7 +4,7 @@ import {
   pg_backgrounds,
 } from './themes/pg-tailwindcss/tokens.mjs'
 
-import {safelist} from './src/utils/colors'
+import { safelist } from './src/utils/colors'
 
 export default {
   darkMode: 'class',

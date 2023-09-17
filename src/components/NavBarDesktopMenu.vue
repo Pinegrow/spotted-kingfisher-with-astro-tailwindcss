@@ -1,6 +1,6 @@
 <script setup lang="ts">
-  import {useNav} from '@/composables/nav'
-  const {currentLocation} = useNav()
+  import { useNav } from '@/composables/nav'
+  const { currentLocation } = useNav()
 
   defineProps({
     navlinks: {
@@ -21,7 +21,8 @@
         :label="navlink.text"
         size="lg"
         :variant="navlink.link === currentLocation.pathname ? 'solid' : 'ghost'"
-        class="!rounded-lg">
+        class="!rounded-lg"
+      >
       </BaseButton>
     </div>
     <BaseButton
@@ -31,7 +32,8 @@
       size="xl"
       icon="i-mdi-pine-tree"
       color="secondary"
-      trailing>
+      trailing
+    >
       <span class="pl-2">Try Now</span>
     </BaseButton>
   </div>

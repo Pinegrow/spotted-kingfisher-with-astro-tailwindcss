@@ -211,7 +211,14 @@ const pg_colors = {
   },
 }
 
-const pg_fonts = {sans: ["'Kalam', sans-serif"], serif: ["'Ruda', sans-serif"]}
+const pg_fonts = {
+  sans: ["'Kalam', sans-serif"],
+  serif: ["'Ruda', sans-serif"],
+}
+
+const pg_font_urls = [
+  'https://fonts.googleapis.com/css?family=Kalam:300,400,700|Ruda:400,500,600,700,800,900&display=swap',
+]
 
 const pg_backgrounds = {
   'design-image':
@@ -229,5 +236,6 @@ const pg_backgrounds = {
 module.exports = {
   pg_colors,
   pg_fonts,
+  pg_font_urls,
   pg_backgrounds,
 }
