@@ -7,4 +7,8 @@
 //   // @ts-ignore
 //   window.devtools = devtools
 // }
-export {}
+
+import type { App } from 'vue'
+// import 'uno.css' // Not required for astro unocss integration
+
+export default (app: App) => {}

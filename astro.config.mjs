@@ -17,7 +17,9 @@ import presetIcons from '@unocss/preset-icons'
 // https://astro.build/config
 export default defineConfig({
   integrations: [
-    vue(),
+    vue({
+      appEntrypoint: '/src/app',
+    }),
     Pinegrow({
       liveDesigner: {
         iconPreferredCase: 'unocss',
