@@ -7,7 +7,7 @@
   // })
 </script>
 <template>
-  <footer class="pt-12">
+  <footer class="pb-24 pt-12">
     <div class="container mx-auto px-8">
       <div class="flex flex-wrap relative">
         <div

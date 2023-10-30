@@ -8,7 +8,7 @@
 </script>
 <template>
   <div
-    class="text-center bg-primary-100 dark:bg-primary-700 text-primary-900 dark:text-primary-100"
+    class="pb-12 text-center bg-primary-100 dark:bg-primary-700 text-primary-900 dark:text-primary-100"
   >
     <div class="container mx-auto px-4">
       <div class="-mx-4 flex flex-wrap">
@@ -39,7 +39,12 @@
                   required
                   name="fields[email]"
                 />
-                <BaseButton type="submit" class="ml-2" variant="soft" size="md">
+                <BaseButton
+                  type="submit"
+                  class="ml-2"
+                  size="md"
+                  color="secondary"
+                >
                   Sign Up
                 </BaseButton>
               </div>

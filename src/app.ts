@@ -8,13 +8,11 @@
 //   window.devtools = devtools
 // }
 
-import type { App } from 'vue'
 // import 'uno.css' // Not required for astro unocss integration
 
+import type { App } from 'vue'
 import pinia from '@/plugins/pinia'
-import head from '@/plugins/head'
 
 export default (app: App) => {
   app.use(pinia)
-  app.use(head)
 }

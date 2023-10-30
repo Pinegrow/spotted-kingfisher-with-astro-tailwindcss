@@ -1,6 +1,5 @@
 <script setup lang="ts">
-  import { useNav } from '@/composables/nav'
-  const { currentLocation } = useNav()
+  //...
 </script>
 <template>
   <section class="bg-primary-900 relative text-white">
@@ -11,11 +10,13 @@
       <div class="container mx-auto pb-10 pt-36 px-4">
         <div class="-mx-4 flex flex-wrap">
           <div class="px-4 w-full lg:w-7/12 2xl:w-6/12">
-            <h1 class="font-light mb-4 text-6xl sm:text-7xl xl:text-8xl">
+            <h1
+              class="font-light font-serif mb-4 text-6xl sm:text-7xl xl:text-8xl"
+            >
               Help the World&rsquo;s Most
               <span class="font-bold">Iconic Species</span>
             </h1>
-            <p class="mb-6 text-xl sm:pr-12">
+            <p class="font-serif mb-6 text-xl sm:pr-12">
               Conserve the endangered spotted kingfisher to protect nature's
               beauty, preserve biodiversity, and ensure a sustainable future.
             </p>

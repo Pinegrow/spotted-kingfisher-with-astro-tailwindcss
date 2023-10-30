@@ -1,16 +1,15 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import HeroSection from '../components/HeroSection.vue'
-import TheVolunteering from '../components/TheVolunteering.svelte'
-import GetInvolved from '../components/GetInvolved.jsx'
-import DiscoverProjects from '../components/DiscoverProjects'
-const name = "I'm a hero!"
+import Layout from '@/layouts/Layout.astro'
+import PageHome from '@/components/PageHome.vue'
+import TheVolunteering from '@/components/svelte/TheVolunteering.svelte';
+import GetInvolved from '@/components/solid/GetInvolved';
+import DiscoverProjects from '@/components/solid/DiscoverProjects';
 ---
 
 <Layout title="Home">
-  <HeroSection />
-  <GetInvolved />
-  <DiscoverProjects />
+  <PageHome client:load />
+  <GetInvolved/>
+  <DiscoverProjects/>
   <TheVolunteering />
 </Layout>
 <style></style>
