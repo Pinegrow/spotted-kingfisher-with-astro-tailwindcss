@@ -6,6 +6,7 @@ import TheFooter from '@/components/TheFooter.vue'
 import site from '@/site'
 
 const {name: SITE_TITLE, description: SITE_DESCRIPTION} = site
+import { heroImageUrl } from "@/utils/hero";
 
 export interface Props {
   title: string
@@ -19,7 +20,7 @@ const currentPath = Astro.url.pathname
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={title || SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={title || SITE_TITLE} description={SITE_DESCRIPTION} image={heroImageUrl} />
   </head>
   <body>
     <div>
