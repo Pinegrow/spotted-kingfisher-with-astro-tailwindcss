@@ -1,0 +1,15 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import PageHome from '@/components/PageHome.vue'
+import TheVolunteering from '@/components/svelte/TheVolunteering.svelte';
+import GetInvolved from '@/components/solid/GetInvolved';
+import DiscoverProjects from '@/components/solid/DiscoverProjects';
+---
+
+<Layout title="Home">
+  <PageHome client:load />
+  <GetInvolved/>
+  <DiscoverProjects/>
+  <TheVolunteering />
+</Layout>
+<style></style>
