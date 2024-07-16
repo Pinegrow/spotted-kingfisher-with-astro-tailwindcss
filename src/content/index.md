@@ -1,10 +1,8 @@
-# Spotted Kingfisher with Astro and Tailwind CSS!
+# Vue Designer Astro Tailwind CSS - Quick start template
 
-Jamstack (MPA-SSG) app for an wildlife welfare/charity organization that helps endangered species by educating the community, and running various volunteering programs. While layouts and pages follow the .astro component format, components are predominantly Vue SFCs and also includes svelte and jsx/tsx components. Note: Astro supports component formats of multiple frameworks.
+This is a starter template that pre-includes the [Pinegrow Astro Module](https://www.npmjs.com/package/@pinegrow/astro-module), [Pinegrow Tailwind CSS Plugin](https://www.npmjs.com/package/@pinegrow/tailwindcss-plugin) and other goodies for Vue Designer.
 
-This is a sample project created using the [Vue Designer Astro Tailwind CSS - Quick start template](https://github.com/pinegrow/pg-astro-tailwindcss).
-
-Demo - https://spotted-kingfisher-astro-tailwindcss.netlify.app/
+Demo - https://pg-astro-tailwindcss.netlify.app/
 
 ## Vue Designer
 
@@ -20,15 +18,25 @@ Clean code 😃, No lock-in - You are in control of your projects and developmen
 
 ### 1. Clone to local
 
-[Create a repo from this template on GitHub](https://github.com/pinegrow/spotted-kingfisher-with-astro-tailwindcss/generate).
+[Create a repo from this template on GitHub](https://github.com/pinegrow/pg-astro-tailwindcss/generate).
 
 (or)
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx giget@latest gh:pinegrow/spotted-kingfisher-with-astro-tailwindcss my-spotted-kingfisher-with-astro-tailwindcss-app #project-name
-cd my-spotted-kingfisher-with-astro-tailwindcss-app
+npx giget@latest gh:pinegrow/pg-astro-tailwindcss my-astro-tailwindcss-app #project-name
+cd my-astro-tailwindcss-app
+npm install #or use pnpm
+```
+
+(or)
+
+If you prefer a blank template (a single empty home page) instead,
+
+```bash
+npx giget@latest gh:pinegrow/pg-astro-tailwindcss#blank my-astro-tailwindcss-app #project-name
+cd my-astro-tailwindcss-app
 npm install #or use pnpm
 ```
 
@@ -73,7 +81,7 @@ npm run unlighthouse # Uses npx unlighthouse from https://unlighthouse.dev/ to r
 ### Deploy to Netlify
 
 You can deploy this repo as a site on your own to explore and experiment with, by clicking this button.
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Pinegrow/spotted-kingfisher-with-astro-tailwindcss)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Pinegrow/pg-astro-tailwindcss)
 
 Check out the [deployment documentation](https://docs.astro.build/en/guides/deploy) for more information.
 
@@ -109,7 +117,7 @@ Check out the [deployment documentation](https://docs.astro.build/en/guides/depl
 
 ### Devtools
 
-- [Vite Devtools](https://github.com/webfansplz/vite-plugin-vue-devtools) - A Vite plugin for Vue that enhances your DX (developer experience) with an amazing set of in-app features. This is an in-app alternative to browser-based/standalone Vue Devtools.
+- [Vite Devtools](https://devtools-next.vuejs.org/guide/vite-plugin) - A Vite plugin for Vue that enhances your DX (developer experience) with an amazing set of in-app features. This is an in-app alternative to browser-based/standalone Vue Devtools.
 - [Vue Devtools](https://devtools.vuejs.org/guide/installation.html#standalone) - Official devtools that can be used as a standalone app alongside Vue Designer. It's conditionally configured in `app.ts` (only during development).
   - **ACTION REQUIRED**: Currently deactivated. In `app.ts`, uncomment the top devtools related snippet to activate.
 
