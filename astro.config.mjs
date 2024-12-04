@@ -1,3 +1,7 @@
+import { EventEmitter } from 'events'
+// Increasing the maxListeners from default 10 to 15 as there are more than 10 vite plugins (mostly vite/astro) ones using fswatcher
+EventEmitter.defaultMaxListeners = 15
+
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
@@ -28,6 +32,7 @@ export default defineConfig({
     // myAstroModule,
     vue({
       appEntrypoint: '/src/app',
+      devtools: true,
       template: {
         compilerOptions: {
           isCustomElement: (tag) => tag === 'lite-youtube',
@@ -82,7 +87,6 @@ export default defineConfig({
     Pinegrow({
       liveDesigner: {
         iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
-        devtoolsKey: 'devtoolsKey', // see app.ts
         tailwindcss: {
           configPath: 'tailwind.config.ts',
           cssPath: '@/assets/css/tailwind.css',
