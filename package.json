@@ -10,7 +10,6 @@
   "scripts": {
     "dev": "astro dev",
     "now": "npm run build && npm run preview",
-    "lighthouse:dev": "npx unlighthouse --no-cache --site http://localhost:4321",
     "lighthouse": "npx unlighthouse --no-cache --site https://pg-astro-tailwindcss.netlify.app",
     "start": "astro dev",
     "build": "astro build",
@@ -52,8 +51,8 @@
   "devDependencies": {
     "@iconify/json": "^2.2.135",
     "@nuxt/eslint-config": "^0.2.0",
-    "@pinegrow/astro-module": "^3.0.60",
-    "@pinegrow/tailwindcss-plugin": "^3.0.29",
+    "@pinegrow/astro-module": "^3.0.65",
+    "@pinegrow/tailwindcss-plugin": "^3.0.33",
     "@tailwindcss/forms": "^0.5.6",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20.8.9",
