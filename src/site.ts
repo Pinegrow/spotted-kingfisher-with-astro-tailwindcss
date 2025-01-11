@@ -4,7 +4,7 @@
 
 export default {
   title: 'Spotted Kingfisher',
-  description: `Help the world's most iconic species`,
+  description: "Help the world's most iconic species",
   // logo: 'i-emojione-rocket',
   logo: 'i-fa6-solid-feather-pointed',
   author: 'Pinegrow',
