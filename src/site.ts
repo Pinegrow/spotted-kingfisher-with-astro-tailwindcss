@@ -3,7 +3,7 @@
 // @unocss-include
 
 export default {
-  name: 'Spotted Kingfisher',
+  title: 'Spotted Kingfisher',
   description: `Help the world's most iconic species`,
   // logo: 'i-emojione-rocket',
   logo: 'i-fa6-solid-feather-pointed',
@@ -18,13 +18,20 @@ export default {
   twitter: '@vuedesigner',
   trailingSlash: false, // default
   titleSeparator: '|', // default
-  nav: [
-    { text: 'Home', link: '/', type: 'primary', icon: 'i-mdi-home' },
-    {
-      text: 'Contact Us',
-      link: '/contact-us',
-      type: 'secondary',
-      icon: 'i-mdi-home',
-    },
-  ],
+  navs: {
+    primary: [
+      {
+        title: 'Home',
+        icon: 'i-mdi-home',
+        to: '/',
+      },
+    ],
+    secondary: [
+      {
+        title: 'Contact Us',
+        icon: 'i-mdi-home',
+        to: '/contact-us',
+      },
+    ],
+  },
 }
