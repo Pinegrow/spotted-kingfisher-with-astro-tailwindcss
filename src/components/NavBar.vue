@@ -8,6 +8,7 @@
 
   const { allNavs, navsPrimary, navsSecondary } = useNavMenu()
 </script>
+
 <template>
   <div class="w-full">
     <nav class>
@@ -17,7 +18,7 @@
             <div class="flex flex-shrink-0 items-center">
               <TheLogo />
             </div>
-            <NavBarPrimary
+            <NavPrimary
               :navs="navsPrimary"
               :current-path="currentPath"
               class="hidden sm:flex sm:ml-6"
@@ -25,13 +26,9 @@
           </div>
           <DarkModeSwitch />
           <div class="-mr-2 items-center relative">
-            <NavBarHamburger
-              v-if="navsSecondary?.length"
-              class="hidden sm:block"
-            />
-            <NavBarHamburger v-if="allNavs.length" class="sm:hidden" />
-            <NavBarSecondary
-              v-if="navsSecondary?.length"
+            <NavHamburger v-if="navsSecondary.length" class="hidden sm:block" />
+            <NavHamburger v-if="allNavs.length" class="sm:hidden" />
+            <NavSecondary
               class="hidden sm:flex sm:justify-end absolute right-0 mt-4"
               :navs="navsSecondary"
               :current-path="currentPath"
@@ -39,7 +36,7 @@
           </div>
         </div>
       </div>
-      <NavBarSecondary
+      <NavSecondary
         class="sm:hidden"
         :navs="allNavs"
         :current-path="currentPath"

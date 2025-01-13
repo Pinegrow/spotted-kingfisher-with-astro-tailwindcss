@@ -11,6 +11,8 @@ export default {
   url: 'https://spotted-kingfisher-astro-tailwindcss.netlify.app',
   github:
     'https://github.com/pinegrow/spotted-kingfisher-with-astro-tailwindcss',
+  ogImageUrl: 'og-image.jpg', // absolute url (or) from public folder
+  generator: 'https://vuedesigner.com',
   defaultLocale: 'en', // default
   identity: {
     type: 'Organization',
@@ -18,6 +20,7 @@ export default {
   twitter: '@vuedesigner',
   trailingSlash: false, // default
   titleSeparator: '|', // default
+
   navs: {
     primary: [
       {
