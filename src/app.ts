@@ -5,6 +5,6 @@ import pinia from '@/plugins/pinia'
 import head from '@/plugins/head'
 
 export default (app: App) => {
-  app.use(head)
   app.use(pinia)
+  app.use(head)
 }

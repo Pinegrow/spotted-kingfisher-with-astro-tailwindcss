@@ -1,6 +1,4 @@
 import { EventEmitter } from 'events'
-// Increasing the maxListeners from default 10 to 15 as there are more than 10 vite plugins (mostly vite/astro) ones using fswatcher
-EventEmitter.defaultMaxListeners = 15
 
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'astro/config'
@@ -24,6 +22,8 @@ import { unheadVueComposablesImports } from '@unhead/vue'
 // import { visualizer } from 'rollup-plugin-visualizer'
 
 import siteMeta from './src/site'
+// Increasing the maxListeners from default 10 to 15 as there are more than 10 vite plugins (mostly vite/astro) ones using fswatcher
+EventEmitter.defaultMaxListeners = 15
 const { url } = siteMeta
 
 // https://astro.build/config
